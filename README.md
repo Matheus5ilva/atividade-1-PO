@@ -13,9 +13,9 @@
 
 ### Objetivo
 
-<p align="center">Lista de revisão em logica de programação pedida pela professora da disciplina de Pesquisa Operacional.</p>
+Lista de revisão em logica de programação pedida pela professora da disciplina de Pesquisa Operacional.
 
-<p align="center">Essa lista contém 5 questões com um foco maior em implementar laços de repetições, arrays e matrizes</p>
+Essa lista contém 5 questões com um foco maior em implementar laços de repetições, arrays e matrizes.
 
 
 ### 🛠 Tecnologias
