@@ -27,7 +27,7 @@ Foi feito em na linguagem Java e as ferramentas usadas na construção da ativid
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [IDE da sua escolha](https://www.eclipse.org/downloads/)(https://netbeans.org/downloads/6.1/index.html). 
+[Git](https://git-scm.com), [IDE da sua escolha](https://www.eclipse.org/downloads/). 
 Além disto ter o JAVA JDK instalado [JAVA JDK](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 
 ### Autor 
