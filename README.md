@@ -8,7 +8,7 @@
   Objetivo •
   Tecnologias • 
   Pré Requisitos • 
-  Autor • 
+  Autor 
 </p>
 
 ### Objetivo
@@ -20,7 +20,7 @@ Essa lista contém 5 questões com um foco maior em implementar laços de repeti
 
 ### 🛠 Tecnologias
 
-Foi feito em na linguagem Java e as ferramentas usadas na construção da atividade:
+Foi feito no sistema operacional Windows, na linguagem Java e a ferramenta usada na construção da atividade:
 
 - [Eclipse IDE](https://www.eclipse.org/downloads/)
 
