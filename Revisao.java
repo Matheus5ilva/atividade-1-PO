@@ -5,56 +5,56 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
 
-public class Revisao { // Classe Atividade de Revis„o de Pesquisa Operacional
+public class Revisao { // Classe Atividade de Revis√£o de Pesquisa Operacional. Na quest√£o 5 alterar o caminho do arquivo .txt para melhor desempenho e compreens√£o.
 
-	public static void questao1() { // Metodo criado para responder a quest„o 1
+	public static void questao1() { // Metodo criado para responder a quest√£o 1
 
-		System.out.println("Ol· Mundo!"); // Foi usado println para quebra de linha automatica.
+		System.out.println("Ol√° Mundo!"); // Foi usado println para quebra de linha automatica.
 
 	}
 
-	public static void questao2() { // Metodo criado para responder a quest„o 2
+	public static void questao2() { // Metodo criado para responder a quest√£o 2
 
-		int[] vector = new int[10]; // CriaÁ„o de array simples de inteiro(int) de 10 posiÁıes comeÁando do indece 0 atÈ 9.
+		int[] vector = new int[10]; // Cria√ß√£o de array simples de inteiro(int) de 10 posi√ß√µes come√ßando do indece 0 at√© 9.
 
-		for (int contador = 0; contador < 10; contador++) { // LaÁo de repetiÁ„o For para preencher o array declarado em cima automaticamente.
+		for (int contador = 0; contador < 10; contador++) { // La√ßo de repeti√ß√£o For para preencher o array declarado em cima automaticamente.
 			
 			double numero = Math.round((Math.random() * 100)); // Uma atributo ponto flutuante(double) para gerar numeros aleatorios
 			
-			boolean repetido = false; // Atributo booleano (true ou false) para garantir que n„o vai haver numeros repetidos gerados
+			boolean repetido = false; // Atributo booleano (true ou false) para garantir que n√£o vai haver numeros repetidos gerados
 			
-			for (int i = 0; i < vector.length; i++) { // LaÁo de repetiÁ„o que percorre o array com os numeros j· criados
+			for (int i = 0; i < vector.length; i++) { // La√ßo de repeti√ß√£o que percorre o array com os numeros j√° criados
 				
-				if (numero == vector[i]) { // Condicional para verificar se existe algum numero gerado È igual ao algum numero ja existente no array
+				if (numero == vector[i]) { // Condicional para verificar se existe algum numero gerado √© igual ao algum numero ja existente no array
 					
-					repetido = true; // alteraÁ„o do valor do atributo boolean
+					repetido = true; // altera√ß√£o do valor do atributo boolean
 					
-					break; // Parada do laÁo de repetiÁ„o, gerando outra repetiÁ„o para gerar outro numero
+					break; // Parada do la√ßo de repeti√ß√£o, gerando outra repeti√ß√£o para gerar outro numero
 				
 				}
 			}
 			if (repetido == false) { // Verificando se o atributo boolean ainda continua falso
 				
-				vector[contador] = (int) numero; // Se o atributo boolean atender a condicional, È incrementado no array um numero aleatorio.
+				vector[contador] = (int) numero; // Se o atributo boolean atender a condicional, √© incrementado no array um numero aleatorio.
 			
 			}
 
 		}
-		for (int j = 0; j < 10; j++) { // LaÁo de repetiÁ„o criado para Imprimir na tela os dados do array
+		for (int j = 0; j < 10; j++) { // La√ßo de repeti√ß√£o criado para Imprimir na tela os dados do array
 			
-			System.out.print(vector[j] + " "); // Foi usado print para n„o haver o pulo de linha automatico.
+			System.out.print(vector[j] + " "); // Foi usado print para n√£o haver o pulo de linha automatico.
 		
 		}
 
 	}
 
-	public static void questao3() { // Metodo criado para responder a quest„o 3
+	public static void questao3() { // Metodo criado para responder a quest√£o 3
 
-		int[][] matriz = new int[10][10]; // CriaÁ„o de array multidimensional(matriz) de inteiro(int) contendo linhas e colunas.
+		int[][] matriz = new int[10][10]; // Cria√ß√£o de array multidimensional(matriz) de inteiro(int) contendo linhas e colunas.
 
-		for (int i = 0; i < 10; i++) { // LaÁo de repetiÁ„o For para preencher as linhas da matriz.
+		for (int i = 0; i < 10; i++) { // La√ßo de repeti√ß√£o For para preencher as linhas da matriz.
 			
-			for (int j = 0; j < 10; j++) { // LaÁo de repetiÁ„o For para preencher as colunas da matriz.
+			for (int j = 0; j < 10; j++) { // La√ßo de repeti√ß√£o For para preencher as colunas da matriz.
 			
 				double numero = Math.round((Math.random() * 100)); // Uma atributo ponto flutuante(double) para gerar numeros aleatorios
 				
@@ -64,13 +64,13 @@ public class Revisao { // Classe Atividade de Revis„o de Pesquisa Operacional
 		
 		}
 
-		for (int l = 0; l < 10; l++) { // LaÁo de repetiÁ„o criado para Imprimir na tela os dados das linhas da matriz
+		for (int l = 0; l < 10; l++) { // La√ßo de repeti√ß√£o criado para Imprimir na tela os dados das linhas da matriz
 			
-			System.out.print("|"); // Foi usado print para n„o haver o pulo de linha automatico.
+			System.out.print("|"); // Foi usado print para n√£o haver o pulo de linha automatico.
 			
-			for (int m = 0; m < 10; m++) {// LaÁo de repetiÁ„o criado para Imprimir na tela os dados das coluna da matriz
+			for (int m = 0; m < 10; m++) {// La√ßo de repeti√ß√£o criado para Imprimir na tela os dados das coluna da matriz
 			
-				System.out.print(" " + matriz[l][m] + " "); // Foi usado print para n„o haver o pulo de linha automatico. AÌ os numeros das linhas ficam juntas uma do lado da outra
+				System.out.print(" " + matriz[l][m] + " "); // Foi usado print para n√£o haver o pulo de linha automatico. A√≠ os numeros das linhas ficam juntas uma do lado da outra
 			
 			}
 			
@@ -79,55 +79,55 @@ public class Revisao { // Classe Atividade de Revis„o de Pesquisa Operacional
 		}
 	}
 
-	public static void questao4() { // Metodo criado para responder a quest„o 4
+	public static void questao4() { // Metodo criado para responder a quest√£o 4
 		
-		ArrayList<Integer> vetor = new ArrayList<Integer>(); //CriaÁ„o de um array usando uma biblioteca ArrayList<> com o tipo inteiro(Integer)
+		ArrayList<Integer> vetor = new ArrayList<Integer>(); //Cria√ß√£o de um array usando uma biblioteca ArrayList<> com o tipo inteiro(Integer)
 
-		for (int i = 0; i < 10; i++) { // LaÁo de repetiÁ„o For para preencher o array declarado em cima automaticamente.
+		for (int i = 0; i < 10; i++) { // La√ßo de repeti√ß√£o For para preencher o array declarado em cima automaticamente.
 			
 			double numero = Math.round((Math.random() * 100)); // Uma atributo ponto flutuante(double) para gerar numeros aleatorios
 
-			vetor.add((int) numero); // Adicionando o valor gerado randomicamente via metodo ".add()". Esse metodo È da biblioteca ArrayList<>
+			vetor.add((int) numero); // Adicionando o valor gerado randomicamente via metodo ".add()". Esse metodo √© da biblioteca ArrayList<>
 
 		}
 
-		System.out.println("O n˙meros criados " + vetor + "\n"); // Foi usado println para quebra de linha automatica. E tambÈm para mostrar o array pronto para conferir os seguintes assuntos.
+		System.out.println("O n√∫meros criados " + vetor + "\n"); // Foi usado println para quebra de linha automatica. E tamb√©m para mostrar o array pronto para conferir os seguintes assuntos.
 
 		Collections.sort(vetor); // Uso da Biblioteca Collections para ordernar o array do menor numero para o maior
 
-		System.out.println("O menor valor do vetor È " + vetor.get(0)); // Impress„o da tela o menor valor do array. Usamos o metodo ".get(Indice do array)" para mostrar o valor do array.
+		System.out.println("O menor valor do vetor √© " + vetor.get(0)); // Impress√£o da tela o menor valor do array. Usamos o metodo ".get(Indice do array)" para mostrar o valor do array.
 		
-		System.out.println("O maior valor do vetor È " + vetor.get(9)); // Impress„o da tela o maior valor do array. Usamos o metodo ".get(Indice do array)" para mostrar o valor do array.
+		System.out.println("O maior valor do vetor √© " + vetor.get(9)); // Impress√£o da tela o maior valor do array. Usamos o metodo ".get(Indice do array)" para mostrar o valor do array.
 
-		int aux = 0; // DeclaraÁ„o de uma variavel auxiliar tipo inteiro(int) para  guardar os valores anteriores 
+		int aux = 0; // Declara√ß√£o de uma variavel auxiliar tipo inteiro(int) para  guardar os valores anteriores 
 		
-		for (int j = 0; j < 10; j++) { // LaÁo de repetiÁ„o criado para percorrer os dados do array
+		for (int j = 0; j < 10; j++) { // La√ßo de repeti√ß√£o criado para percorrer os dados do array
 		
-			aux += vetor.get(j); // atribuiÁ„o e soma do atributo auxiliar com os valores do indice do array
+			aux += vetor.get(j); // atribui√ß√£o e soma do atributo auxiliar com os valores do indice do array
 		
 		}
 		
-		int media = (aux / vetor.size()); // Atributo media foi criada para gerar a media de todos valores do array. A sua atribuiÁ„o j· È a conta matematica da media.
+		int media = (aux / vetor.size()); // Atributo media foi criada para gerar a media de todos valores do array. A sua atribui√ß√£o j√° √© a conta matematica da media.
 
-		System.out.println("A mÈdia dos valores do vetor È " + media); // Impress„o da media do array na tela.
+		System.out.println("A m√©dia dos valores do vetor √© " + media); // Impress√£o da media do array na tela.
 	}
 
-	public static void questao5() { // Metodo criado para responder a quest„o 5
+	public static void questao5() { // Metodo criado para responder a quest√£o 5
 
-		int[][] matriz = new int[10][10]; // CriaÁ„o de array multidimensional(matriz) de inteiro(int) contendo linhas e colunas. Servir· para armazenar a primeira matriz
+		int[][] matriz = new int[10][10]; // Cria√ß√£o de array multidimensional(matriz) de inteiro(int) contendo linhas e colunas. Servir√° para armazenar a primeira matriz
 		
-		int[][] matriz2 = new int[10][10]; // CriaÁ„o de array multidimensional(matriz) de inteiro(int) contendo linhas e colunas. Servir· para armazenar a segunda matriz
+		int[][] matriz2 = new int[10][10]; // Cria√ß√£o de array multidimensional(matriz) de inteiro(int) contendo linhas e colunas. Servir√° para armazenar a segunda matriz
 		
-		int[][] matrizSoma = new int[10][10]; // CriaÁ„o de array multidimensional(matriz) de inteiro(int) contendo linhas e colunas. Servir· para armazenar a soma da primeira matriz com a segunda matriz.
+		int[][] matrizSoma = new int[10][10]; // Cria√ß√£o de array multidimensional(matriz) de inteiro(int) contendo linhas e colunas. Servir√° para armazenar a soma da primeira matriz com a segunda matriz.
 		
-		try { //Recurso usado para tratamento de excessıes do Java. Requisito do leitor de arquivo  
+		try { //Recurso usado para tratamento de excess√µes do Java. Requisito do leitor de arquivo  
 			
-			Scanner input = new Scanner(new File("C:\\\\Users\\\\mathe\\\\eclipse-workspace\\\\CursoAlura\\\\src\\\\matriz.txt")); // Usado a biblioteca Scanner para ler o arquivo. O File È para localizar e acessar o arquivo.
+			Scanner input = new Scanner(new File("C:\\\\Users\\\\mathe\\\\eclipse-workspace\\\\CursoAlura\\\\src\\\\matriz.txt")); // Usado a biblioteca Scanner para ler o arquivo. O File √© para localizar e acessar o arquivo.
 			
 			// matriz 1
-			for (int i = 0; i < 10; i++) { // LaÁo de repetiÁ„o For para ler do arquivo e preencher as linhas da matriz.
+			for (int i = 0; i < 10; i++) { // La√ßo de repeti√ß√£o For para ler do arquivo e preencher as linhas da matriz.
 				
-				for (int j = 0; j < 10; j++) { // LaÁo de repetiÁ„o For para ler do arquivo e preencher as colunas da matriz.
+				for (int j = 0; j < 10; j++) { // La√ßo de repeti√ß√£o For para ler do arquivo e preencher as colunas da matriz.
 				
 					matriz[i][j] = input.nextInt(); // A primeira matriz vai ser preenchida pelo atributo "retirado" do arquivo .txt .
 				 
@@ -137,11 +137,11 @@ public class Revisao { // Classe Atividade de Revis„o de Pesquisa Operacional
 			
 			System.out.println("Matriz 1"); // Foi usado println para quebra de linha automatica.
 			
-			for (int l = 0; l < 10; l++) {// LaÁo de repetiÁ„o criado para Imprimir na tela os dados das linhas da matriz
+			for (int l = 0; l < 10; l++) {// La√ßo de repeti√ß√£o criado para Imprimir na tela os dados das linhas da matriz
 			
-				for (int m = 0; m < 10; m++) {// LaÁo de repetiÁ„o criado para Imprimir na tela os dados das coluna da matriz
+				for (int m = 0; m < 10; m++) {// La√ßo de repeti√ß√£o criado para Imprimir na tela os dados das coluna da matriz
 				
-					System.out.print(" " + matriz[l][m] + " "); // Foi usado print para n„o haver o pulo de linha automatico. AÌ os numeros das linhas ficam juntas uma do lado da outra
+					System.out.print(" " + matriz[l][m] + " "); // Foi usado print para n√£o haver o pulo de linha automatico. A√≠ os numeros das linhas ficam juntas uma do lado da outra
 				
 				}
 				
@@ -153,9 +153,9 @@ public class Revisao { // Classe Atividade de Revis„o de Pesquisa Operacional
 			
 			// matriz 2
 			
-			for (int a = 0; a < 10; a++) {  // LaÁo de repetiÁ„o For para ler do arquivo e preencher as linhas da matriz.
+			for (int a = 0; a < 10; a++) {  // La√ßo de repeti√ß√£o For para ler do arquivo e preencher as linhas da matriz.
 				
-				for (int b = 0; b < 10; b++) {// LaÁo de repetiÁ„o For para ler do arquivo e preencher as colunas da matriz.
+				for (int b = 0; b < 10; b++) {// La√ßo de repeti√ß√£o For para ler do arquivo e preencher as colunas da matriz.
 				
 					matriz2[a][b] = input.nextInt(); // A segunda matriz vai ser preenchida pelo atributo "retirado" do arquivo .txt .
 				
@@ -165,11 +165,11 @@ public class Revisao { // Classe Atividade de Revis„o de Pesquisa Operacional
 			
 			System.out.println("Matriz 2");// Foi usado println para quebra de linha automatica.
 			
-			for (int o = 0; o < 10; o++) {// LaÁo de repetiÁ„o criado para Imprimir na tela os dados das linhas da matriz
+			for (int o = 0; o < 10; o++) {// La√ßo de repeti√ß√£o criado para Imprimir na tela os dados das linhas da matriz
 			
-				for (int p = 0; p < 10; p++) {// LaÁo de repetiÁ„o criado para Imprimir na tela os dados das coluna da matriz
+				for (int p = 0; p < 10; p++) {// La√ßo de repeti√ß√£o criado para Imprimir na tela os dados das coluna da matriz
 				
-					System.out.print(" " + matriz2[o][p] + " ");// Foi usado print para n„o haver o pulo de linha automatico. AÌ os numeros das linhas ficam juntas uma do lado da outra
+					System.out.print(" " + matriz2[o][p] + " ");// Foi usado print para n√£o haver o pulo de linha automatico. A√≠ os numeros das linhas ficam juntas uma do lado da outra
 				
 				}
 				
@@ -183,9 +183,9 @@ public class Revisao { // Classe Atividade de Revis„o de Pesquisa Operacional
 			
 			System.out.println("Soma das Matrizes");// Foi usado println para quebra de linha automatica.
 			
-			for (int c = 0; c < 10; c++) {// LaÁo de repetiÁ„o For para ler das duas matrizes anteriores e preencher as linhas da matriz.
+			for (int c = 0; c < 10; c++) {// La√ßo de repeti√ß√£o For para ler das duas matrizes anteriores e preencher as linhas da matriz.
 			
-				for (int d = 0; d < 10; d++) {// LaÁo de repetiÁ„o For para ler das duas matrizes anteriores e preencher as colunas da matriz.
+				for (int d = 0; d < 10; d++) {// La√ßo de repeti√ß√£o For para ler das duas matrizes anteriores e preencher as colunas da matriz.
 				
 					matrizSoma[c][d] = matriz[c][d] + matriz2[c][d]; // Essa matriz tera a soma da primeira e segunda matriz. Foi utilizado o [c][d] para mostrar qual o indice da linha e coluna que estamos.
 				
@@ -193,11 +193,11 @@ public class Revisao { // Classe Atividade de Revis„o de Pesquisa Operacional
 			
 			}
 			
-			for (int x = 0; x < 10; x++) {// LaÁo de repetiÁ„o criado para Imprimir na tela os dados das linhas da matriz
+			for (int x = 0; x < 10; x++) {// La√ßo de repeti√ß√£o criado para Imprimir na tela os dados das linhas da matriz
 			
-				for (int y = 0; y < 10; y++) {// LaÁo de repetiÁ„o criado para Imprimir na tela os dados das linhas da matriz
+				for (int y = 0; y < 10; y++) {// La√ßo de repeti√ß√£o criado para Imprimir na tela os dados das linhas da matriz
 				
-					System.out.print(" " + matrizSoma[x][y] + " ");// Foi usado print para n„o haver o pulo de linha automatico. AÌ os numeros das linhas ficam juntas uma do lado da outra
+					System.out.print(" " + matrizSoma[x][y] + " ");// Foi usado print para n√£o haver o pulo de linha automatico. A√≠ os numeros das linhas ficam juntas uma do lado da outra
 				
 				}
 				
@@ -205,9 +205,9 @@ public class Revisao { // Classe Atividade de Revis„o de Pesquisa Operacional
 			
 			}
 
-		} catch (IOException ioe) { //Como temos o tratamento de excess„o try, È da biblioteca usarmos o catch para completar
+		} catch (IOException ioe) { //Como temos o tratamento de excess√£o try, √© da biblioteca usarmos o catch para completar
 			
-			System.out.println(ioe); // Impress„o na tela da mensagem do erro ocorrido. (Se houver).
+			System.out.println(ioe); // Impress√£o na tela da mensagem do erro ocorrido. (Se houver).
 		
 		}
 	
@@ -215,68 +215,68 @@ public class Revisao { // Classe Atividade de Revis„o de Pesquisa Operacional
 
 	public static void main(String[] args) { //Metodo principal do programa
 
-		Scanner opcMenu = new Scanner(System.in); // Atributo da biblioteca Scanner para lermos do teclado a opÁ„o do usuario.
+		Scanner opcMenu = new Scanner(System.in); // Atributo da biblioteca Scanner para lermos do teclado a op√ß√£o do usuario.
 
 		System.out.println("\t***** Trabalho de Pesquisa Operacional *****\n");
-		System.out.println("1- FaÁa um programa que escreva ìOl· mundoî.");
-		System.out.println("2- FaÁa um programa que leia 10 n˙meros e os armazene em um vetor. Imprima o vetor.");
-		System.out.println("3- FaÁa um programa que leia e preencha uma matriz de 10x10. No final, imprima a matriz.");
+		System.out.println("1- Fa√ßa um programa que escreva ¬ìOl√° mundo¬î.");
+		System.out.println("2- Fa√ßa um programa que leia 10 n√∫meros e os armazene em um vetor. Imprima o vetor.");
+		System.out.println("3- Fa√ßa um programa que leia e preencha uma matriz de 10x10. No final, imprima a matriz.");
 		System.out.println(
-				"4- FaÁa um programa que leia 10 n˙meros e calcule imprima o maior valor, o menor valor e a mÈdia.");
+				"4- Fa√ßa um programa que leia 10 n√∫meros e calcule imprima o maior valor, o menor valor e a m√©dia.");
 		System.out.println(
-				"5- FaÁa um programa que leia 2 matrizes de um arquivo .txt de tamanho 10x10 e calcule a soma das duas matrizes. Imprima a matriz resultante.");
+				"5- Fa√ßa um programa que leia 2 matrizes de um arquivo .txt de tamanho 10x10 e calcule a soma das duas matrizes. Imprima a matriz resultante.");
 		System.out.println("--------------------------------");
-		System.out.println("Escolha o n˙mero da quest„o");
+		System.out.println("Escolha o n√∫mero da quest√£o");
 
 		int opc = opcMenu.nextInt(); //Atributo que recebe o valor do teclado e converte para inteiro.
 
 		switch (opc) { // Tipo de condicional usado para criar um menu e mostrar o resultado da escolha do usuario.
 		
-		case 1: // Caso o usuario clique 1, vai ser redirecionado para a quest„o 1
+		case 1: // Caso o usuario clique 1, vai ser redirecionado para a quest√£o 1
 		
 			System.out.println("--------------------------------");
 			
-			questao1(); // Chamada do metodo para a quest„o 1
+			questao1(); // Chamada do metodo para a quest√£o 1
 			
 			break;
 		
-		case 2:// Caso o usuario clique 2, vai ser redirecionado para a quest„o 2
+		case 2:// Caso o usuario clique 2, vai ser redirecionado para a quest√£o 2
 			
 			System.out.println("--------------------------------");
 			
-			questao2(); // Chamada do metodo para a quest„o 2
+			questao2(); // Chamada do metodo para a quest√£o 2
 			
 			break;
 		
-		case 3:// Caso o usuario clique 3, vai ser redirecionado para a quest„o 3
+		case 3:// Caso o usuario clique 3, vai ser redirecionado para a quest√£o 3
 		
 			System.out.println("--------------------------------");
 			
-			questao3(); // Chamada do metodo para a quest„o 3
+			questao3(); // Chamada do metodo para a quest√£o 3
 			
 			break;
 		
-		case 4:// Caso o usuario clique 4, vai ser redirecionado para a quest„o 4
+		case 4:// Caso o usuario clique 4, vai ser redirecionado para a quest√£o 4
 		
 			System.out.println("--------------------------------");
 			
-			questao4(); // Chamada do metodo para a quest„o 4
+			questao4(); // Chamada do metodo para a quest√£o 4
 			
 			break;
 		
-		case 5:// Caso o usuario clique 5, vai ser redirecionado para a quest„o 5
+		case 5:// Caso o usuario clique 5, vai ser redirecionado para a quest√£o 5
 		
 			System.out.println("--------------------------------");
 			
-			questao5(); // Chamada do metodo para a quest„o 5
+			questao5(); // Chamada do metodo para a quest√£o 5
 			
 			break;
 		
-		default:// Caso o usuario clique num numero que n„o È das opÁoes na tela, vai ser redirecionado uma mensagem de erro
+		default:// Caso o usuario clique num numero que n√£o √© das op√ßoes na tela, vai ser redirecionado uma mensagem de erro
 		
 			System.out.println("--------------------------------");
 			
-			System.out.println("OpÁ„o inv·lida! Tente novamente."); // Mensagem de erro.
+			System.out.println("Op√ß√£o inv√°lida! Tente novamente."); // Mensagem de erro.
 		
 		}
 
